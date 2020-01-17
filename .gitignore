@@ -1,0 +1,11 @@
+*.o
+*.so
+
+tmp/
+
+/simple/simple
+/jseval/jseval
+/mt19937/mt19937
+/rand/rand
+
+.vscode
