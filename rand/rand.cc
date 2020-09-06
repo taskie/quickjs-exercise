@@ -59,7 +59,7 @@ JSValue jsMt19937New(JSContext *ctx, JSValueConst jsThis, int argc, JSValueConst
   if (argc == 0) {
     JS_SetOpaque(obj, new std::mt19937());
   } else if (argc == 1) {
-    if (JS_IsInteger(argv[0])) {
+    if (JS_IsNumber(argv[0])) {
       uint32_t val;
       int err = JS_ToUint32(ctx, &val, argv[0]);
       if (err) {
